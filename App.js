@@ -56,7 +56,7 @@ export default function App() {
         longitude: location.coords.longitude,
       };
     }
-    // Fallback if no user location
+    // Fallback to Indianapolis area if no user location
     return {
       latitude: 39.7684 + 0.01,
       longitude: -86.1581,
@@ -80,7 +80,7 @@ export default function App() {
 
           <Marker
             coordinate={getDummyPOI()}
-            title="Tonny's Diner ★★★★☆ (4.0/5)"
+            title="Tom's Diner ★★★★☆ (4.0/5)"
             description="A popular family-owned breakfast & lunch diner!"
           />
       </MapView>
